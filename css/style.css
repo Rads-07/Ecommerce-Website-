@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'proxima reg';
+    src: url('/fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf');
+    
+}
+
+@font-face {
+    font-family: 'proxima semibold';
+    src: url('/fonts/FontsFree-Net-Proxima-Nova-Sbold.otf');
+    
+}
+
+@font-face {
+    font-family: 'proxima bold';
+    src: url('/fonts/FontsFree-Net-Proxima-Nova-Bold.otf') ;
+
+}
+
+
+
+* {
+    margin:0;
+    padding:0;
+    
+}
+
+body {
+    font-family: 'proxima semibold';
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #F6F7F8;
+    
+}
+
+
+/*-----------------------------------Header-------------------------------------*/
+.header{
+    height: 80px;
+    width: auto;
+    max-height: 80px;
+    background-color: #FFFFFF;
+}
+
+.logo img{
+    width: 52%;
+    padding-top: 5px;
+    
+}
+
+
+
+.notification img, .profile img, .bag img, .search img {
+    
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+.profile p,.bag p {
+    font-size: 16px; 
+    float: left;
+    padding-top: 27px;
+}
+
+.notification img, .profile p, .bag p{
+    padding-right: 40px;
+}
+
+.header1{
+    height: 90px;
+    width: auto;
+    max-height: 90px;
+}
+
+.home { 
+    padding-top: 24px;
+    font-size: 14px;
+}
+.home a{
+    text-decoration: none;
+}
+
+.categories{
+    padding: 20px 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.categories h5{
+    font-size: 18px;
+    text-transform:uppercase;
+    
+}
+.categories ul{
+    list-style-type:none;
+    font-size: 16px;
+}
+
+.categories li, .categories h5{
+    margin-bottom:19px;
+}
+.categories a{
+    text-decoration: none;
+}
+
+
+.iphone{
+    background-color: #2E90E5;
+    border-radius: 5px;
+}
+
+.banner{
+    
+    padding: 50px 3px;
+    margin-left: 30px;
+}
+.banner h3,h8,h7{
+  color: white;
+}
+
+.iphone-img{
+    padding-left: 45px;
+}
+
+/*------------------------------------main part1------------------------------------------*/
+
+
+.prices, .color, .brand{
+    background-color: white;
+    font-family: 'proxima semibold';
+    margin-top: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+    border-radius: 5px;
+    padding-bottom: 24px;
+}
+
+.min-max{
+    padding-bottom: 24px;
+}
+.min{
+    float: left;
+}
+.max{
+    float: right;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.min-value {
+    float: left;
+    color: #C1C8CE;
+}
+.dash{
+    float: left;
+    padding-left: 18px;
+    padding-right: 25px;
+}
+.max-value{
+    float:right;
+    color: #C1C8CE;
+}
+
+
+#inlineRadio2 {
+    width: 15px;
+    height: 15px;
+}
+
+
+/*******radio button*******/
+
+.color{
+    height: 120px;
+    
+}
+
+.c1 {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* Hide the default radio button */
+.c1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* custom radio button */
+.blue, .red, .black, .yellow, .pink, .gray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #2E90E5;
+  border-radius: 50%;    
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.pink {
+  background-color: deeppink;
+}
+
+.gray {
+  background-color: #F6F7F8;
+}
+
+.c1 input:checked ~ .blue, .c1 input:checked ~ .red, .c1 input:checked ~ .black, 
+.c1 input:checked ~ .yellow, .c1 input:checked ~ .pink, .c1 input:checked ~ .gray{
+  background-color: #2E90E5;
+}
+
+.blue:after, .red:after, .black:after, .yellow:after, .pink:after, .gray:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.c1 input:checked ~ .blue:after,  .c1 input:checked ~ .red:after,  .c1 input:checked ~ .black:after,
+.c1 input:checked ~ .yellow:after,  .c1 input:checked ~ .pink:after,  .c1 input:checked ~ .gray:after{
+  display: block;
+}
+
+.c1 .blue:after,.c1 .red:after,.c1 .black:after,.c1 .yellow:after ,.c1 .pink:after,.c1 .gray:after{
+ 	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background:white;
+}
+
+.form-check-inline{
+margin-right: -1rem;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+/**********/
+
+
+/* brand section */
+
+.s1,.s2,.s3{
+    padding-bottom: 24px;
+}
+.s1 span{
+   padding-left: 150px;
+}
+.s2 span{
+   padding-left: 153px;
+}
+.s3 span{
+   padding-left: 130px;
+}
+.s4 span{
+   padding-left: 134px;
+}
+
+.s1 a{
+    text-decoration: none;
+}
+.s2 a,.s3 a,.s4 a{
+    color: black;
+    text-decoration: none;
+}
+
+.number{
+    color: #C1C8CE;
+}
+
+
+.more{
+    background-color: white;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: px; 
+    color: #33A0FF;
+    text-align: center;
+    border-radius: 5px;
+}
+.more a
+{ text-decoration: none;
+}
+
+
+/*------------------------------------------------------main part2-------------------------------------------------*/
+
+.section-main{
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+.part2-display-bar{
+    height: 54px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.part2-display-bar p {
+    color: black;
+    font-family: 'proxima reg';
+    font-size: 16px;
+    margin-top: 5px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+#items{
+  margin-top: 17px;  
+}
+#Name_dropdown{
+    width: 100px;
+    height: 30px;
+    border-color: #F1F3F4;
+    border-radius: 5px;
+    font-family: 'proxima reg';
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 3px;
+    
+}
+#show{
+    width: 100px;
+    height: 30px;
+    border-color: #F1F3F4;
+    border-radius: 5px;
+    font-family: 'proxima reg';
+    margin-top: 10px; 
+    border-style: solid;
+    border-width: 3px;
+}
+
+.part2-headphones {
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 24px;
+    height: 100%;
+    width: 100%;
+    margin-right: 24px;
+    font-family: 'proxima semibold';
+    
+}
+.headphone1 {
+    background-color: white;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border-color:#F1F3F4;
+    border-style:solid;
+    border-width:4px;
+    
+}
+
+.headphone-mid{
+    background-color: white;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;  
+    border-radius: 5px;
+    border-color:#F1F3F4;
+    border-style:solid;
+    border-width:4px;
+    
+}
+
+.checked{
+    color:orange;
+}
+
+.part2-headphones .img-part{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.part2-headphones .text-part{
+    
+    padding-left:0px;
+    padding-right:0px;
+    text-align: center;
+}
+.part2-headphones .star-part{
+    text-align: center;
+}
+
+.part2-headphones .price-part1 {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.part2-headphones .price-part2 {
+    text-align: center; 
+    text-decoration: line-through;
+    color: #C1C8CE;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    
+}
+.navbar a{
+    text-align:center;
+    color: black;
+    width: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.navbar a:hover, .navbar a:active, .navbar a:focus{
+    background-color: black;
+    color: white;
+
+}
+
+
+/*--------------------------------------------------------------footer---------------------------------------------------------*/
+
+.footer{
+    margin-top: 24px;
+    position: relative;
+    height: 167px;
+    padding-top: 25px;
+    
+}
+
+.beep-info img {
+    width: 150px;
+}
+.beep-info p{
+    padding-right:50px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.follow-us h5{
+    padding-top: 24px;
+    padding-bottom: 10px;
+     padding-left: 15px;
+}
+.follow-us p{
+    font-size: 14px;
+    padding-bottom: 15px;
+     padding-left: 15px;
+}
+
+.follow-us .fb{
+    padding-right: 38px;
+    padding-left: 15px;
+}
+
+.contact-us h5{
+    padding-top: 24px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.contact-us p{
+    font-size: 14px; 
+    margin: 0;
+    padding-left: 15px;
+}
+
+.copyright {
+    color: #C1C8CE;
+    padding-left: 15px;
+}
+
+.foorer-logos{
+     padding-left: 12px;
+}
+.footer-logos img{
+    padding-right: 12px;
+}
+
+
+/*-----------------------media------------*/
+@media only screen and (max-width: 600px){
+    .notification, .profile, .bag,  .search{
+        display: none;
+    }
+    
+    .logo img{
+        width:40%;
+        height: 40%;
+    }
+    .header{
+        
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    
+    .header{
+        width: 800px;
+    }
+    .header1{
+        width: 800px;
+    }
+    .nav{
+        width: 800px;
+    }
+    .iphone img{
+       display: none;
+    }
+    .logo{
+        width: 50%;
+    }
+    
+    .part2-display-bar{
+        height:70px;
+        width: 800px;
+    }
+    .part2-headphones {
+        width: 800px;
+    }
+    .prices{
+        width: 800px;
+         text-align: center;
+    }
+    .color{
+        width: 800px;
+         text-align: center;
+    }
+    .brand{
+        width: 800px;
+        text-align: center;
+    }
+    .more{
+        
+         width: 800px;
+        text-align: center; 
+    }
+    .navbar{
+        width: 800px;
+    }
+    .footer{
+        width: 800px;
+    }
+}
