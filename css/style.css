@@ -390,6 +390,10 @@ padding-right: 5px;
     color:orange;
 }
 
+.unchecked{
+    color:#C1C8CE;
+}
+
 .part2-headphones .img-part{
     text-align: center;
     margin-top: 24px;
